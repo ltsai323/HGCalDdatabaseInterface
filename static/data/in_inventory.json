@@ -1,0 +1,7 @@
+[
+    { "_var_": "VAR_NAME", "label": "Name *", "input": "str", "check": ["data"] },
+    { "_var_": "VAR_MAIL", "label": "Email *", "input": "email", "check": [ "data", "email"] },
+    { "_var_": "VAR_CALL", "label": "Phone", "input": "str", "check": [""] },
+    { "_var_": "VAR_CMPY", "label": "Company", "input": "str" },
+    { "_var_": "VAR_test", "label": "myopts", "input": "menu", "check": ["data"] , "items": ["hii", "jjj"] }
+]

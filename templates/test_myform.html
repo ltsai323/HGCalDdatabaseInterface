@@ -1,0 +1,31 @@
+{% extends 'framework.html' %}
+{% block pagetitle %}Submit Tester{% endblock %}
+
+{% block contents %} {% block content %}
+
+{% for mesg in get_flashed_messages() %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      {{ mesg }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+{% endfor %}
+
+{% if passed %}
+    <h1>Hello {{ passed }} !! </h1>
+{% else %}
+    <br/>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        {% for name in names %}
+            {{ form.Get(name).label(class='col-form-label') }}
+            {{ form.Get(name)(class='form-control') }}
+        {% endfor %}
+        <br/>
+        {{ form.submit(class="col-md-3 btn btn-block btn-primary rounded-0 py-2 px-4") }}
+    </form>
+{% endif %}
+
+
+{% endblock %} {% endblock %}

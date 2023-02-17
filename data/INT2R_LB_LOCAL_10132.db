@@ -1,0 +1,5 @@
+[INT2R_LB_LOCAL_10132]
+user=CMS_HGC_PRTTYPE_HGCAL_READER
+password=HGCAL_Reader_2016
+host=localhost
+port=10132

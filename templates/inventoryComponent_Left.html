@@ -1,0 +1,31 @@
+<div class="form h-100">
+{% if passed %}
+    <h1>Data Uploaded! Thank you.</h1>
+{% else %}
+    <br/>
+    <form class="mb-5" method="post" id="contactForm" name="contactForm">
+      <div class="row">
+        {{ form.hidden_tag() }}
+
+        {% for name,vartype in nametypes %}
+          <div class="col-md-3 form-group mb-5">
+              {% if vartype == 'menu' %}
+            {{ form.Get(name).label(class='col-form-label') }}
+            {{ form.Get(name)(class='form-select') }}
+            {% else %}
+            {{ form.Get(name).label(class='col-form-label') }}
+            {{ form.Get(name)(class='form-control') }}
+
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 form-group">
+        {{ form.submit(class="btn btn-primary rounded-0 py-2 px-4") }}
+        </div>
+      </div>
+    </form>
+{% endif %}
+</div>

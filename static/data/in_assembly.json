@@ -1,0 +1,11 @@
+[
+    { "_var_": "VAR_FLATNESS", "label": "flatness", "input": "str", "check": ["data"] },
+    { "_var_": "VAR_FLATNESS_STD", "label": "deviation of flatness", "input": "str", "check": ["data"] },
+    { "_var_": "VAR_THICKNESS", "label": "thickness", "input": "str", "check": ["data"] },
+    { "_var_": "VAR_THICKNESS_STD", "label": "deviation of thickness", "input": "str", "check": ["data"] },
+    { "_var_": "VAR_LAYER1CENTER_SHIFT", "label": "Sensor center shifting", "input": "str", "check": ["data"] },
+    { "_var_": "VAR_LAYER1ANGLE_SHIFT", "label": "Sensor angle shifting", "input": "str", "check": ["data"] },
+    { "_var_": "VAR_LAYER2CENTER_SHIFT", "label": "PCB center shifting", "input": "str", "check": ["data"] },
+    { "_var_": "VAR_LAYER2ANGLE_SHIFT", "label": "PCB angle shifting", "input": "str", "check": ["data"] },
+    { "_var_": "VAR_OUTOFRANGE", "label": "PCB or sensor is out of range", "input": "menu", "check": ["data"], "items": ["Good","Failed"] }
+]

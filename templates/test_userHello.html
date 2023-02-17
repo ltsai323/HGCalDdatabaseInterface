@@ -1,0 +1,10 @@
+{% extends "framework.html" %}
+{% block pagetitle %}Hi!{% endblock %}
+
+{% block contents %} {% block content %}
+<br/>
+<center>
+    <h1>Hi {{ user_name|lower }}</h1>
+</center>
+{% endblock %} {% endblock %}
+

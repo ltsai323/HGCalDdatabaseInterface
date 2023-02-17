@@ -1,0 +1,7 @@
+[
+    { "_var_": "VAR_NAME", "val": "Hi default test" },
+    { "_var_": "VAR_MAIL", "val": "testsample@test.com" },
+    { "_var_": "VAR_CALL", "val": "+88613579" },
+    { "_var_": "VAR_CMPY", "val": "NTUCMS" },
+    { "_var_": "VAR_test", "val": "1" }
+]
